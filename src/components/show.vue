@@ -7,14 +7,14 @@
 
 			<div class="flexi-i">
 				<h1 class="show-title">{{ show.title }}</h1>
-				<p class="show-subtitle">{{ show.release | '-' }} | {{ show.tag_list }}</p>
+				<p class="show-subtitle">{{ show.release }} | {{ show.tag_list }}</p>
 				<p class="show-description">{{ show.description }}</p>
 			</div>
 		</div>
 
 		<div class="show-info" v-for="s in show.seasons">
 			<h1 class="show-title">{{ s.title }}</h1>
-			<p class="show-subtitle">{{ show.release | '-' }} | {{s.episodes.length}} episodes</p>
+			<p class="show-subtitle">{{ show.release }} | {{s.episodes.length}} episodes</p>
 			<p class="show-description">{{ s.description }}</p>
 
 			<template v-for="e in s.episodes">

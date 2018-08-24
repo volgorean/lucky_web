@@ -12,6 +12,7 @@
 
 <style lang="scss">
   @import "./assets/css/global.scss";
+  @import "./assets/css/font-awesome.css";
 </style>
 
 <script>

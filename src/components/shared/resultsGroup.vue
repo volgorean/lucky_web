@@ -2,8 +2,8 @@
 	<div class="group">
 		<div class="flexi-c r">
 			<h2 class="group-title">{{title}}</h2>
-			<p class="group-button" @click="left">left</p>
-			<p class="group-button" @click="right">right</p>
+			<p class="group-button" @click="left"><i class="fa fa-chevron-left"></i></p>
+			<p class="group-button" @click="right"><i class="fa fa-chevron-right"></i></p>
 		</div>
 
 		<div id="results">
@@ -42,11 +42,16 @@
 			color: black;
 
 			i {
+				width: 100%;
 				height: 20px !important;
 				line-height: 20px !important;
-				font-size: 12px !important;
+				font-size: 10px !important;
 				font-weight: 800;
 				color: black;
+
+				&.fa-chevron-right {
+					left: 1px;
+				}
 			}
 		}
 		#results {

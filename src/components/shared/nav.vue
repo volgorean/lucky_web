@@ -18,7 +18,9 @@
 		<router-link to="/shows" class="nav-link">SHOWS</router-link>
 		<router-link to="#" class="nav-link no">AUDIOBOOKS</router-link>
 		<router-link to="#" class="nav-link no">LIVE</router-link>
-		<router-link to="#" class="nav-link" id="admin"><i class="material-icons">vpn_key</i></router-link>
+		<p class="nav-link" id="logout" @click="$s.commit('logout')">
+			<i class="fa fa-key"></i>
+		</p>
 	</nav>
 </template>
 
@@ -86,13 +88,14 @@
 			cursor: not-allowed;
 		}
 	}
-	#admin {
+	#logout {
 		padding: 0;
+		cursor: pointer;
 
 		i {
 			height: 20px !important;
 			line-height: 20px !important;
-			font-size: 12px !important;
+			font-size: 10px !important;
 			color: white;
 		}
 	}
